@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>GeoStar</servlet-name>
+		<servlet-class>com.zarubond.geostar.GeoStarServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Game</servlet-name>
+		<servlet-class>com.zarubond.geostar.GameServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GameServer</servlet-name>
+		<servlet-class>com.zarubond.geostar.GameServerServlet</servlet-class>
+	</servlet>
+		<servlet>
+		<servlet-name>CreateGame</servlet-name>
+		<servlet-class>com.zarubond.geostar.CreateGameServlet</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>GeoStar</servlet-name>
+		<url-pattern>/geostar</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Game</servlet-name>
+		<url-pattern>/game/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GameServer</servlet-name>
+		<url-pattern>/gameserver</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>CreateGame</servlet-name>
+		<url-pattern>/creategame</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>GeoStar</welcome-file>
+	</welcome-file-list>
+</web-app>

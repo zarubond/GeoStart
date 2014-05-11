@@ -1,0 +1,142 @@
+
+body{
+	background-color: #303030;
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	color: white;
+}
+
+#titleText{
+	font-family: Geneva, serif;
+	line-height: 1em;
+	color: #fff9d6;
+	font-weight:bold;
+	font-size: 145px;
+	text-shadow:0px 0px 0 rgb(208,208,208),1px 1px 0 rgb(171,171,171),2px 2px 0 rgb(134,134,134),3px 3px 0 rgb(96,96,96),4px 4px 0 rgb(59,59,59),5px 5px 0 rgb(22,22,22), 6px 6px 0 rgb(-15,-15,-15),7px 7px 6px rgba(0,0,0,0.6),7px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
+	border:1px solid black;
+	radius:5px;
+	text-align:center;
+}
+
+table.table_list {
+	border-collapse:collapse;
+	border:1px solid #818181;
+	font-size:1.7rem;
+	color:#FAFAFA;
+	radius:5px;
+}
+
+.table_list a {
+	color:#E9E9E9;
+}
+
+.table_list a:visited {
+	color:#ABABAB;
+}
+
+table.table_list tr:nth-child(even)
+{
+	background-color: #515151;
+}
+
+table.table_list tr:nth-child(even):hover
+{
+	background-color: #717171;
+}
+
+table.table_list tr:nth-child(odd) 
+{
+	background-color: #616161;
+}
+
+table.table_list tr:nth-child(odd):hover
+{
+	background-color: #717171;
+}
+
+table.table_list td:last-child {
+	width:100px;
+}
+
+table.table_list th
+{
+	padding-right:15px;
+	padding-left:15px;
+	background-color:black;
+}
+
+table.table_list td{
+	text-align:center;
+}
+
+
+table.table_list {
+	min-width:50%;
+	margin:auto;
+}
+
+footer
+{
+	text-align:center;
+	width:100%;
+}
+
+footer a{
+	color: white;
+}
+
+#welcome{
+	font-weight:bold;
+}
+
+#games{
+	max-width:1200px;
+	margin:auto;
+}
+
+table.table_list tr:nth-child(odd) a.jojo{
+	animation-delay: 0s;
+}
+
+table.table_list tr:nth-child(even) a.jojo{
+	animation-delay: 1s;
+}
+
+a.jojo  {
+    -webkit-animation: cssAnimation 2s infinite linear;
+    -moz-animation: cssAnimation 2s infinite linear;
+    -o-animation: cssAnimation 2s infinite linear;
+    animation: cssAnimation 2s infinite linear;
+
+    font:italic bold 25px Georgia,serif;
+    text-decoration: none;
+}
+
+@-webkit-keyframes cssAnimation {
+0% {font-size:20px;}
+50% {font-size:25px;}
+100% {font-size:20px;}
+}
+@-moz-keyframes cssAnimation {
+0% {font-size:20px;}
+50% {font-size:25px;}
+100% {font-size:20px;}
+}
+
+@-o-keyframes cssAnimation {
+0% {font-size:20px;}
+50% {font-size:25px;}
+100% {font-size:20px;}
+}
+
+#running{
+	font-size: 30px;
+}
+
+
+#newGame{
+	font-size: 20px;
+}
+
