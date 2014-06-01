@@ -27,3 +27,12 @@ body{
 	text-decoration: none;
 	color: #A0A0A0;
 }
+
+#fullscreen{
+    background-color: white;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    cursor: default;
+    font-weight: bold;
+}

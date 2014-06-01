@@ -81,6 +81,7 @@ footer
 {
 	text-align:center;
 	width:100%;
+    margin-top: 30px;
 }
 
 footer a{
@@ -115,28 +116,30 @@ a.jojo  {
 }
 
 @-webkit-keyframes cssAnimation {
-0% {font-size:20px;}
-50% {font-size:25px;}
-100% {font-size:20px;}
+    0% {font-size:20px;}
+    50% {font-size:25px;}
+    100% {font-size:20px;}
 }
+
 @-moz-keyframes cssAnimation {
-0% {font-size:20px;}
-50% {font-size:25px;}
-100% {font-size:20px;}
+    0% {font-size:20px;}
+    50% {font-size:25px;}
+    100% {font-size:20px;}
 }
 
 @-o-keyframes cssAnimation {
-0% {font-size:20px;}
-50% {font-size:25px;}
-100% {font-size:20px;}
+    0% {font-size:20px;}
+    50% {font-size:25px;}
+    100% {font-size:20px;}
 }
 
 #running{
 	font-size: 30px;
 }
 
-
 #newGame{
+    margin-top: 20px;
 	font-size: 20px;
+    text-align: center;
 }
 

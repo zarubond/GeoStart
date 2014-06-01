@@ -1,3 +1,4 @@
+'use strict';
 /**
  * Local game client
  */

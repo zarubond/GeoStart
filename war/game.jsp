@@ -5,10 +5,10 @@
 <head>
     <title>The Game</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="web_author" content="Ondřej Záruba">
     <link rel="stylesheet" type="text/css" href="/style/game-style.css" />
     <script type="text/javascript" src="/contrib/gl-matrix.js"></script>
     <script type="text/javascript" src="/js/scene.js"></script>
-    <script type="text/javascript" src="/js/texture.js"></script>
     <script type="text/javascript" src="/js/shot.js"></script>
     <script type="text/javascript" src="/js/player.js"></script>
     <script type="text/javascript" src="/js/game.js"></script>
@@ -41,10 +41,21 @@
 	</script>
 
 </head>
-<body onload="startApp('${bean.token}', '${bean.gameKey}', '${bean.id}',${bean.pos_x},${bean.pos_y})">
-
-<div id="top"> Deaths:&nbsp;<span id="deaths">${bean.deaths}</span> Kills:&nbsp;<span id="kills">${bean.kills}</span><a id="leave" href="/">Leave&nbsp;&gt;&gt;</a></div>
-<canvas id="canvas"></canvas>
-
+<body>
+    <input type="hidden" value="${bean.token}"   id="token" />
+    <input type="hidden" value="${bean.gameKey}" id="gameKey" />
+    <input type="hidden" value="${bean.id}"      id="id" />
+    <input type="hidden" value="${bean.pos_x}"   id="pos_x" />
+    <input type="hidden" value="${bean.pos_y}"   id="pos_y" />
+    <audio id="shot_audio">
+        <source src="/audio/Gun_Shot.ogg" type="audio/ogg"/>
+        <source src="/audio/Gun_Shot.mp3" type="audio/mpeg"/>
+        <source src="/audio/Gun_Shot.wav" type="audio/wav"/>
+    </audio>
+    <div id="top">Deaths:&nbsp;<span id="deaths">${bean.deaths}</span> Kills:&nbsp;<span id="kills">${bean.kills}</span><a id="leave" href="/">Leave&nbsp;&gt;&gt;</a></div>
+    <div>
+        <canvas id="canvas"></canvas>
+        <div id="fullscreen">Enter fullscreen</div>
+    </div>
 </body>
 </html>

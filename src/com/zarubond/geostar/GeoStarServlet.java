@@ -38,13 +38,13 @@ public class GeoStarServlet extends HttpServlet {
 		List<Game> games=gameList(pm,0);
 	   	for(Game game: games)
 	   	{
-	   		//pm.deletePersistent(game);/*
+	   		//pm.deletePersistent(game);
 	   		game.checkActivePlayers(pm);
 	   		GameInstanceModel inst=new GameInstanceModel();
 		   	inst.name=game.getName();
 		   	inst.key=game.getKeyString();
 		   	inst.playerCount=game.playerCount();
-		   	bean.addGame(inst);	   	
+		   	bean.addGame(inst);	
 	   	}	    
 	   	
 	   	pm.close();

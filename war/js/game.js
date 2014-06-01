@@ -14,6 +14,7 @@ function Game() {
 }
 
 Game.prototype.load = function () {
+    this.sound=document.getElementById("shot_audio");
 };
 /**
  * Update all entities
@@ -81,7 +82,15 @@ Game.prototype.mousePress = function (event) {
 Game.prototype.mouseRelease = function (event) {
 	var shot=this.ship.shoot();
 	if(shot!=null)
+    {
 		this.newShots.push(shot);
+        if(this.sound!=null)
+        {
+            this.sound.currentTime = 0;
+            this.sound.play();
+        }
+    }
+   
 };
 
 Game.prototype.keyPress = function (event) {

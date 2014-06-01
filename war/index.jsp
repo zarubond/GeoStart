@@ -5,16 +5,22 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<meta name="web_author" content="Ondřej Záruba">
         <link rel="stylesheet" type="text/css" href="/style/style.css" />
+        <script type="text/javascript" src="/js/polygon.js"></script>
         <title>GeoStar</title>
     </head>
     <body>
     
-    	<header id="titleText">GeoStar</header>
+    	<header id="titleText">GeoStar
+            <svg width="100px" height="100px" id="star">
+            </svg>
+        </header>
 		<article>
 			<div id="welcome">Welcome ${ bean.nickname }</div>
+			
 			<div id="games">
-				<p id="running">Running games<p>
+				<h1>Games on server</h1>
 				<table class="table_list">
 				<tr><th>Name</th><th>Player count</th><th></th></tr>
 				<c:forEach items="${bean.games}" var="element">
@@ -22,10 +28,10 @@
 				</c:forEach>
     			</table>
     			<form method="post" action="/creategame" id="newGame">
-    				New game <input type="text" name="game_name"/><input type="submit"  value="Create"/>
+    				New game <input type="text" name="game_name" pattern="[A-Za-z]+" placeholder="Name" title="Please insert only letters!"/><input type="submit"  value="Create"/>
     			</form>
     		</div>
-    	<article>
+    	</article>
     	<footer>
     		<a href="http://zarubond.com">Ondřej Záruba</a> &copy; 2014
     	</footer>
